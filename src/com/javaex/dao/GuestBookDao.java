@@ -73,7 +73,7 @@ public class GuestBookDao {
 			pstmt.setString(1, guestBookVo.getName()); // ?(물음표) 중 1번째, 순서중요
 			pstmt.setString(2, guestBookVo.getPassword()); // ?(물음표) 중 2번째, 순서중요
 			pstmt.setString(3, guestBookVo.getContent()); // ?(물음표) 중 3번째, 순서중요
-			pstmt.setString(3, guestBookVo.getRegdate()); // ?(물음표) 중 3번째, 순서중요
+			pstmt.setString(4, guestBookVo.getRegdate()); // ?(물음표) 중 3번째, 순서중요
 
 			count = pstmt.executeUpdate(); // 쿼리문 실행
 
@@ -150,7 +150,7 @@ public class GuestBookDao {
 
 			pstmt.setInt(1, no);// ?(물음표) 중 1번째, 순서중요
 			pstmt.setString(2, password);
-			pstmt = conn.prepareStatement(query);
+			
 			System.out.println(query);
 			
 			

@@ -9,7 +9,7 @@
 	GuestBookDao guestBookDao = new GuestBookDao();
 
 	int no = Integer.parseInt(request.getParameter("no"));            
-	String pw = request.getParameter("password");
+	String pw = request.getParameter("passward");
 	
 	guestBookDao.guestBookDelete(no, pw);
 	
@@ -21,7 +21,7 @@
 	
 	
     //리다이렉트(리스트요청)
-	//response.sendRedirect("./list.jsp");
+	response.sendRedirect("./addList.jsp");
 %>
 
 
